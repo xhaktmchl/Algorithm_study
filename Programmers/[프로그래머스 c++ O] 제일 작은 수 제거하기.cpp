@@ -1,6 +1,6 @@
 #include <string>
 #include <vector>
-#include <iostream>
+#include <algorithm>
 
 using namespace std;
 // [프로그래머스 c++ O] 제일 작은 수 제거하기
