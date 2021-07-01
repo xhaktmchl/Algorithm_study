@@ -12,6 +12,8 @@ using namespace std;
 // 문자 바꿈
 // 바뀐 후 정답 확인
 // 오/왼 중 가까운 거리 구해서 인덱스 최신화
+// 오른 인덱스: (i+dist)%name.size() 
+// 왼 : (i+name.size() - dist)%name.size() : 왼쪽으로 빼면 음수가 나오기 때문에 전체 사이즈 name.size() 더한다음 뺀다.
 // 주의: 위아래 계산중 A부터 아래로 갈 경우 A->Z에서 거리1 추가됨
 int solution(string name) {
     int answer = 0;
