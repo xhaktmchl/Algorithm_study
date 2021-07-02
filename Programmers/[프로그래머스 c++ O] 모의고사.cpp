@@ -10,13 +10,21 @@ using namespace std;
 // 완전탐색으로 정답 갯수 구함
 // 정답 오름차순으로 넣기 
 // 최대 정답 개수 구하고 1,2,3번 차례로 같은지 검사하고 정답 배열에 넣으면 오름차순으로 정리
+// 풀이 2:
+// 각 수포자 정답배열 ar1 = {1,2,3,4,5}; 식으로 규칙 범위만 선언 후 인덱스로 반복 탐색
+// 뒤 부분은 같음
 // 개념: 벡터.push_back(대입할 대상)
 
-vector<int> solution(vector<int> answers) {
+
+// 풀이 1
+/*vector<int> solution(vector<int> answers) {
     vector<int> answer;
     
     int c1,c2,c3; // 각 수포자의 정답 카운트 변수
     c1=c2=c3=0;
+    vector<int> ar1 = {1,2,3,4,5};
+    vector<int> ar2 = {2, 1, 2, 3, 2, 4, 2, 5};
+    vector<int> ar3 = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
     vector<int> ar1(10000); // 각 수포자 정답 배열
     vector<int> ar2(10000);
     vector<int> ar3(10000);
@@ -53,6 +61,34 @@ vector<int> solution(vector<int> answers) {
         if(answers[i] == ar1[i]) {c1++; }
         if(answers[i] == ar2[i]){ c2++;}
         if(answers[i] == ar3[i]){ c3++;}
+        
+    }
+    
+    // 정답 오름차순으로 넣기 
+    // 최대 정답 개수 구하고 1,2,3번 차례로 같은지 검사하고 정답 배열에 넣으면 오름차순으로 정리
+    int maxnum = max(max(c1,c2),c3); 
+    if(maxnum == c1) { answer.push_back(1);}
+    if(maxnum == c2) { answer.push_back(2);}
+   if(maxnum == c3) { answer.push_back(3);}
+    
+    return answer;
+}*/
+
+// 풀이 2
+vector<int> solution(vector<int> answers) {
+    vector<int> answer;
+    
+    int c1,c2,c3; // 각 수포자의 정답 카운트 변수
+    c1=c2=c3=0;
+    vector<int> ar1 = {1,2,3,4,5};
+    vector<int> ar2 = {2, 1, 2, 3, 2, 4, 2, 5};
+    vector<int> ar3 = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
+   
+    // 스포자 1,2,3, 번 각 정답 갯수 확인
+    for(int i=0;i<answers.size();i++){
+        if(answers[i] == ar1[i%ar1.size()]) {c1++; }
+        if(answers[i] == ar2[i%ar2.size()]){ c2++;}
+        if(answers[i] == ar3[i%ar3.size()]){ c3++;}
         
     }
     
