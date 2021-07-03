@@ -17,10 +17,11 @@ int solution(int num) {
     long long Num = num; // 주의 : int로 하면 범위 넘어가서 에러
     
     for(int i=0;i<500;i++){
+         if(Num == 1)break; // 1이면 중단
         if(Num%2 == 0) {Num/=2;} // 짝수
         else { Num = Num*3+1;}// 홀수
         c++;
-        if(Num == 1)break;
+       
     }
     if(Num != 1) answer = -1; // 1일 아닌경우
     else {answer = c;}
