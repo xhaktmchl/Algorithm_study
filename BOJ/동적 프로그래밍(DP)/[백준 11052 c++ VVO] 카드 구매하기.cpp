@@ -19,6 +19,7 @@ using namespace std;
 // dp[0] 부터 차례로 저장해나가야 함
 // dp[i] = max((dp[i-1]+ar[1]),(dp[i-2]+ar[2]),... ,(dp[i-i]+ar[i]))
 // 바텀업 dp로 구현
+// 시간복잡도: O(n*n)
 // 풀이: 
 // 주의: n번째 dp는 카들 조합들중 최대이므로 이중 반복문이어야 함
 #define MAX 1001
