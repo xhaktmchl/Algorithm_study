@@ -10,6 +10,7 @@ using namespace std;
 // 가장 긴 증가하는 부분수열에서 수열의 합을 더해주는 것이 차이
 // n번째 부분수열의 원소가 n보다 작은 수열의 클 때에만 비교
 // dp[i] = if (ar[j] < ar[i]) max(dp[i-1] + ar[i],dp[i-2]+ar[i], ,,, dp[1]+ar[i]);
+// 초기화 자기 숫자로 초기화
 // 풀이: 
 // 바텀업 dp 구현
 // 시간복잡도: O(n*n)
@@ -42,7 +43,7 @@ int main()
 	}
 	// 최대 증가 부분수열의 합 출력
 	// max_element 함수를 이용하면 최댓값 바로 구함: max_element(시작주소,끝주소)
-	cout << *max_element(dp, dp + n) << '\n';
+	cout << *max_element(dp+1, dp + n+1) << '\n';
 	/*	int maxN = 0;
 	for (int i = 1; i <= n; i++) {
 		maxN = max(maxN, dp[i]);
