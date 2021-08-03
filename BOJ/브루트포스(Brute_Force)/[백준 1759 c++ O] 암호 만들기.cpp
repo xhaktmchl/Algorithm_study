@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <cstring> // memset 헤더
 using namespace std;
-// [백준 1759 c++ OO] 안전 영역 
+// [백준 1759 c++ O] 암호 만들기 
 // 문제: 
 // 접근: 가능한 비밀번호 경우 추출 -> 완전탐색 해야하는데 비밀번호의 자릿수가 일정한 것이 아니므로 dfs/ 재귀 생각
 // 오름차순=정렬+start인자,중복없음= 방문배열 없음
