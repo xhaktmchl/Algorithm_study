@@ -14,7 +14,7 @@ using namespace std;
 // 뎁스가4 인 완전탐색 재귀/dfs로 테트로 미노의 최댓값 갱신
 // ㅏㅓㅗㅜ 모양은 중심칸의 인덱스 조건 걸고 각자 계산 후 최댓값 갱신
 // 최댓값 출력
-#define MAX 21
+#define MAX 501
 int n, m;
 int graph[MAX][MAX];
 bool visit[MAX][MAX];
