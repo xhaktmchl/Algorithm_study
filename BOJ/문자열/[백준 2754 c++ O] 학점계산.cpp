@@ -9,7 +9,7 @@ using namespace std;
 // 접근: 
 // 시간복잡도: 
 // 풀이: 
-
+// 개념: cout 소수점 고정반올림  cout<<fixed; cout.precision(i자리까지 반올림)
 int main() {
 	ios::sync_with_stdio(false); // 계산시간 단축 // cin,scanf 같이 쓰면 오류
 	cin.tie(nullptr); cout.tie(nullptr);// 입출력 시간 단축 // 이것을 쓰면 scanf,printf섞어 쓰면 안됨
@@ -30,5 +30,6 @@ int main() {
 	if (s == "D+") { cout << 1.3 << '\n'; }
 	if (s == "D0") { cout << 1.0 << '\n'; }
 	if (s == "D-") { cout << 0.7 << '\n'; }
+	if (s == "F") { cout << 0.0 << '\n'; }
 	return 0;
 }
