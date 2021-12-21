@@ -76,3 +76,79 @@ T ≤ 30
  
 
 ==================
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+using namespace std;
+ 
+/*
+[] 
+문제: 
+접근: 완탐 -> 이중 ㅏㄴ복으로 연속된 m개의 차량 탐색 -> 시간복잡(n*m)
+시간복잡도: O(n*m) = 
+풀이:
+1.
+*/
+#define MAX 1000+2
+int m, n, t, sum = 0;
+int colorAr[52], carAr[MAX];
+int tp[52];
+ 
+ 
+int main() {
+    ios::sync_with_stdio(false); // 계산시간 단축 // cin,scanf 같이 쓰면 오류
+    cin.tie(nullptr); cout.tie(nullptr);// 입출력 시간 단축 // 이것을 쓰면 scanf,printf섞어 쓰면 안됨
+ 
+    cin >> t;
+    for (int i = 1; i <= t; i++) {
+        int ok = 0;
+        cin >> n >> m;
+ 
+        // 범죄차량 색 입력
+        sum = 0;
+        for (int j = 1; j <= m; j++) {
+            cin >> colorAr[j];
+            sum += colorAr[j]; // 차량 총 수
+        }
+        // 톨게이트 차량 색 입력
+        for (int j = 1; j <= n; j++) {
+            cin >> carAr[j];
+        }
+ 
+        // 완탐으로 연속 차량 탐색
+        for (int j = 1; j <= n - sum; j++) {
+            for (int k = j; k < j + sum; k++) {
+                tp[carAr[k]]++;
+            }
+ 
+            // 차량 색 수 일치 검사
+            int c = 0;
+            for (int k = 1; k <= m; k++) {
+                if (tp[k] == colorAr[k]) { c++; }
+            }
+ 
+            // 맞으면 출력 하고 중지
+            if (c == m) { 
+                cout << '#' << i << " ";
+                cout << j << '\n';
+                ok = 1;
+                break;
+            }
+ 
+            //tp배열 초기화
+            for (int k = 1; k <= m; k++) {
+                tp[k] = 0;
+            }
+ 
+        }
+ 
+        // 범죄차량 없으면 0 출력
+        if (ok == 0) {
+            cout << '#' << i << " ";
+            cout << 0 << '\n';
+        }
+    }
+    return 0;
+}
