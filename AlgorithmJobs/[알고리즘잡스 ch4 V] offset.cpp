@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 /*
-[알고리즘잡스 ch2 V] offset
+[알고리즘잡스 ch4 V] offset
 풀이: 완탐으로 상하좌우 범위 및 크기비교
 시간복잡도: O()
 */
