@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 /*
-[알고리즘잡스 ch4 04 O] 팰린드롬 조사
+[알고리즘잡스 ch7 04 O] 팰린드롬 조사
 풀이: 문자열 완탐으로 같은 쌍의 갯수와 문자열 길이 비교
 시간복잡도: O(n)=1000
 */
