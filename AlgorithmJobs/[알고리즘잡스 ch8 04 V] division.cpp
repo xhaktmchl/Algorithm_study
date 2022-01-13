@@ -10,7 +10,6 @@ using namespace std;
 #define MAX 25
 int n,c=0;
 int result[MAX];// 더한 결과 배열
-bool visit[MAX];// 방문 배열
 
 // 재귀: 더하는 숫자
 void re(int idx,int sum,int num){
