@@ -31,7 +31,7 @@ int dist[MAX][MAX];
 //bfs
 void bfs(int row,int col){
   queue<pair<int,int>> q;//큐 생성
-  q.push(make_pair(row,col) ); visit[row][col]=1;// 큐 푸쉬, 방문처리
+  q.push({row,col} ); visit[row][col]=1;// 큐 푸쉬, 방문처리
   dist[row][col]=0;
   //bfs시작
   while(!q.empty()){
@@ -47,7 +47,7 @@ void bfs(int row,int col){
       
       if(rr<0 || rr>=n || cc<0 || cc>=m){ continue;} // 좌표 범위검사
       if(!visit[rr][cc] && Map[rr][cc]==0){// 방문 안했으면 큐 푸쉬, 방문처리
-        q.push(make_pair(rr,cc)); visit[rr][cc]=1;
+        q.push({rr,cc}); visit[rr][cc]=1;
         dist[rr][cc]=dist[row][col]+1;
         
       }
