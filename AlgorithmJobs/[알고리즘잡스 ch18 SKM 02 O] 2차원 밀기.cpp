@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 /*
-[알고리즘잡스 ch18 02 O] 2차원 밀기
+[알고리즘잡스 ch18 SKM 02 O] 2차원 밀기
 풀이: 구현,완탐
   //1.배열 입력
   //2.상 테두리 오른 밀기
