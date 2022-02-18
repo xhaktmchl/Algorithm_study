@@ -98,6 +98,7 @@ int main() {
       idx[order[i]]+=dist[i]; // 말 이동
       if(idx[order[i]]>=21){ idx[order[i]]=21;}
     }  
+    if(idx[order[i]]==21){ continue;} // 도착한 경우는 겹치지 않는걸로 생각
     if(visit[idx[order[i]]]==1){
       cout<<-1<<'\n';
       return 0;
