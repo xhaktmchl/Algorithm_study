@@ -33,8 +33,8 @@ int n,k;
 int a[50][50];
 int curRow,curCol;
 bool visit[50][50];
-int dx[]={0,0,-1,1};
-int dy[]={-1,1,0,0};
+int dx[]={0,-1,1,0};// 우선순위 규칙에 따라 상좌우하 방향
+int dy[]={-1,0,0,1};
 int dist[50][50]; // 요원으로부터 거리 배열
 string b[50][50];
 
