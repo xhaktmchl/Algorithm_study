@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 /*
-[세종대 알고리즘 트레이닝 Level20.5 08번 O] 원하는 패턴의 크기 적용
+[세종대 알고리즘 트레이닝 Level20.5 09번 O] 원하는 패턴의 크기 적용
 문제:
 접근: 완탐
 풀이:
