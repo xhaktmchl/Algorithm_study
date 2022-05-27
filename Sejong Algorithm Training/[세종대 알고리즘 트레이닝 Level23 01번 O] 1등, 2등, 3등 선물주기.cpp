@@ -21,7 +21,7 @@ using namespace std;
 	//재귀
 	//방문 취소
 	//경로에 문자 팝
-시간복잡도: O(n*n)=10000
+시간복잡도: O(4^3)=
 */
 char input[10];
 string path;
