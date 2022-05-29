@@ -6,7 +6,7 @@
 #include <cmath>
 using namespace std;
 /*
-[세종대 알고리즘 트레이닝 Level18.5 10번 V] 각 글자수 세기
+[세종대 알고리즘 트레이닝 Level18.5 11번 V] 유령은 존재 할까?
 문제:
 접근: 
 풀이: 완탐
