@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 /*
-[세종대 알고리즘 트레이닝 Level22.5 05번 V] Mapping
+[세종대 알고리즘 트레이닝 Level22.5 06번 V] 문장 정렬
 문제:
 접근: 
 풀이:
