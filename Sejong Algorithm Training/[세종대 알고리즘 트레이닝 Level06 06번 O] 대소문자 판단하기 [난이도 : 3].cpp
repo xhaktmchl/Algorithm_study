@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 /*
-[세종대 알고리즘 트레이닝 Level06 65번 O] 대소문자 판단하기 [난이도 : 3]
+[세종대 알고리즘 트레이닝 Level06 06번 O] 대소문자 판단하기 [난이도 : 3]
 문제:
 접근: 
 풀이: 
