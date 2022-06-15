@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 /*
-[세종대 알고리즘 트레이닝 Level23.5 05번 O] 황금좌표 찾기
+[세종대 알고리즘 트레이닝 Level23.5 06번 O] 황금좌표 찾기
 문제:
 접근: 
 풀이: 완탐
