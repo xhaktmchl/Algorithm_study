@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 /*
-[세종대 알고리즘 트레이닝 Level30 02번 O] 인접행렬 그래프 DFS
+[세종대 알고리즘 트레이닝 Level30 01번 O] 인접행렬 그래프 DFS
 문제:
 접근:
 풀이:
