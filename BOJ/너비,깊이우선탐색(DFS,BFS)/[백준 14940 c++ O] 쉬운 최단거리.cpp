@@ -3,7 +3,7 @@
 #include <queue>
 using namespace std;
 /*
-[백준 3085 14940 c++ O] 쉬운 최단거리
+[백준 14940 c++ O] 쉬운 최단거리
 문제:
 접근: 
 시간 복잡도: nlogm+n*n
