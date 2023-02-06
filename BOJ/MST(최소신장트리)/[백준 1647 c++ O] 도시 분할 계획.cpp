@@ -76,7 +76,7 @@ int main()
         if (fin(n1) != fin(n2)) {
             uni(n1, n2);
             cnt += 1;
-            if(cnt<n) sum += dist;
+            if(cnt<n) sum += dist; // 도시두개로 분할해서 마지막 간선은 추가하지 않음
         }
     }
     //3.출력: 최소 비용
