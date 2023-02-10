@@ -10,7 +10,7 @@
 //#include <cmath>
 using namespace std; // lower_bound, upper_bound
 /*
-[백준 11505 c++ XO] 구간 곱 구하기
+[백준 11505 c++ VXO] 구간 곱 구하기
 문제:
 접근: 세그, 인덱스드트리 -> 반복적인 구간곱 구하기
 시간복잡도:
